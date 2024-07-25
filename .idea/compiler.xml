@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="report-service" />
+        <module name="data-collection-service" />
+        <module name="credit-scoring-service" />
+        <module name="user-management-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="credit-scoring-service" target="17" />
+      <module name="data-collection-service" target="17" />
+      <module name="report-service" target="17" />
+      <module name="user-management-service" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="credit-scoring-service" options="-parameters" />
+      <module name="data-collection-service" options="-parameters" />
+      <module name="report-service" options="-parameters" />
+      <module name="user-management-service" options="-parameters" />
+    </option>
+  </component>
+</project>
